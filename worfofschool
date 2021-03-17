@@ -1,0 +1,123 @@
+package testedojogo;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main_Class {
+	public static void main(String args[]) {
+
+	
+  Scanner input = new Scanner(System.in);
+	 
+	 int[] linha1 = new int [1];
+	 int[] colunaum = new int[1];
+	 int[] linhadois = new int[1];
+	 int[] colunadois = new int[1];
+	 int[] linhatres = new int[1];
+	 int[] colunatres = new int[1];
+	 int[] linhaquatro = new int[1];
+	 int[] colunaquatro = new int[1];
+	 
+	 
+	 for(int i = 0; i <1; i++) {
+		 
+		 
+		  System.out.println("Digite linha o [x] [] da primeira matriz");
+			 
+			 linha1[0] = input.nextInt();
+			 
+	 
+       for(int i1 = 0; i1< 1;i1++) {
+    	   
+    	   System.out.println("Digite o lado baixo da primeira coluna");
+    	   
+    	   colunaum[0]= input.nextInt();
+    	  
+    	    }
+	 }
+	 
+	 
+	 for(int i = 0; i<1; i++) {
+		 
+		  System.out.println("Digite linha dois [] [x] da primeira matriz");
+		  
+		  linhadois[0] = input.nextInt();
+		  
+		  for(int j = 0; j<1; j++) {
+			  
+			  System.out.println("Digite o segundo lado baixo da primeira matriz");
+			  
+			  colunadois[0] = input.nextInt();		  
+		  }
+	 }
+
+	 
+	 for(int i = 0; i <1; i++) {
+		 
+		 
+		  System.out.println("Digite linha o [x] [] da segunda matriz");
+			 
+			 linhatres[0] = input.nextInt();
+			 
+	 
+       for(int i1 = 0; i1< 1;i1++) {
+    	   
+    	   System.out.println("Digite o primeiro lado de baixo da primeira coluna");
+    	   
+    	   colunatres[0] = input.nextInt();
+    	  
+    	    }
+	 }
+	 
+	 	 for(int i = 0; i<1; i++) {
+		 
+		  System.out.println("Digite linha dois [] [x] da segunda matriz");
+		  
+		  linhaquatro[0] = input.nextInt();
+		  
+		  for(int j = 0; j<1; j++) {
+			  
+			  System.out.println("Digite o segundo lado da segunda matriz");
+			  
+			  colunaquatro[0] = input.nextInt();		  		  
+		  }
+	 }
+    
+	  int operacao =linha1[0] * linhatres[0];
+	  
+	  int operacaodois = colunadois[0] * linhatres[0];
+	  
+	   int operatres =  colunadois[0] * colunatres[0];
+	  
+	
+	   int operaquatro = linha1[0] * linhaquatro[0];
+	
+	   int operacinco =  linhadois[0] * colunaquatro[0];
+	 
+	   int operaseis = colunaum[0] * linhaquatro[0];
+	
+	   int operasete = colunadois[0] * colunaquatro[0];
+	  	    
+	  
+	  int soma = operacao + operacaodois;
+	  int somad= operatres + operaquatro;
+	  
+	  
+	  int sasa = operacinco + operaseis;
+	  int ds = operaseis = operasete;
+	  
+	  
+	  System.out.println( soma);
+	  
+	  System.out.println("");
+	  
+	  System.out.println( somad);
+	  
+	  System.out.println("");
+	  
+	  System.out.println(sasa);
+	  
+	  System.out.println(ds);
+	  
+ 
+	}
+}
